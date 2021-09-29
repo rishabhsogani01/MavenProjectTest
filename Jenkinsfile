@@ -4,7 +4,7 @@ pipeline{
         jdk 'myJava'
         maven 'myMaven'
     }
-	agent {label 'Slave1'}
+	agent none
       stages{
            stage('Checkout'){
                agent {label 'Slave1' OR any}
